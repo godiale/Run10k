@@ -1,31 +1,28 @@
 As user, I want to load web application in my browser.
-It should consist of sequence of Web pages.
-
 Application should be written on python.
 
-All Web pages background should be styled as below:
-* Clear blue sky with the sun shining in the left upper corner
-* In the right upper corner -- big slogan "Project Run10k"
-* In the center -- big Garmin Forerunner 230 (black) watches, more than 80% of area of the screen.
-* All further controls should be drawn inside this Forerunner screen (like in the frame)
+Application should be represented as a sequence of web pages.
+User can click "Prev" and "Next" buttons to navigate.
 
-On the first page I see following controls:
-* Invitation to enter Garmin Connect credentials
-* Garmin Connect username entry.
-* Garmin Connect password entry.
-* A button "Connect"
+Use "garmin_forerunner.jpg" from project files as a background picture on each page.
+This picture contains image of watches with round black display. 
+Draw all web controls inside watches' display, using green "monochrome CRT monitor aesthetic" shrift.
 
-As user, I can entry my Garmin Connect username and password and press "Connect".
-Application then connects to my Garmin Connect account data via API
-* If username and password are correct -- it can read my trainings history.
-* If username or password are not correct -- application returns to the first screen,
-  and show small banner to me as a user, that credentials are not correct.
+On the first page, application shows banner "Herzlich Willkommen!".
 
-After successful reading data from my Garmin Connect account, program displays second page.
+On the second page, application shows:
+* Banner "Enter Garmin Connect credentials"
+* Text field "Username" and input field to get username.
+* Text field "Password" and input field to get password.
+* A button "Connect..."
 
-On the second page I as a user see following information:
-* How many days starting 07.08.2020 I had at least 1 running training (running days done).
-* How many days remaining till 10000 days with runs (10000 - number of runnings days done).
-* Calculate average runs rate per day from the history, predict and display the date, when I reach 10000 running days, with this rate.
+Upn clicking the button, application should authenticate to Garmin Connect API with entered credentials.
+* If username and password are correct - popup "Connection successful" is shown. Application moves to next page.
+* If username or password are incorrect - popup "Username or Password is incorrect" is shown. Application stays on current page.
 
+Once connection is successful, second page is not shown in current browser session.
+Application should hold Garmin Connect API session and use it to get data.
 
+On the third page application shows following information.
+* How many days starting 07.08.2020 I had at least 1 running training (running days done). Call it "Running days".
+* Calculate average runs rate per day from the history, predict and display the date, when I reach 10000 running days, with this rate. Call it "Estimated completion".
