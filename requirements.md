@@ -4,14 +4,14 @@ Application should be written on python.
 Application should be represented as a sequence of web pages.
 User can click "Prev" and "Next" buttons to navigate.
 
-Use "garmin_forerunner.png" from project files as a background picture on each page.
-This picture contains image of watches with round black display. 
-Draw all web controls inside watches' display, using green "monochrome CRT monitor aesthetic" shrift.
+Each web page should have image "garmin_forerunner.png" from project files as a background picture.
+This picture contains image of watches with round black display, having circle shape.
+Analyze the picture, find black circle shape area, determine its position and size. Lets name it "drawing area".
+All banners, text input controls, buttons that application shows to the user, should fit inside "drawing area" and styled as green "monochrome CRT monitor aesthetic".
 
 On the first page, application shows banner "Herzlich Willkommen!".
 
 On the second page, application shows:
-* Banner "Enter Garmin Connect credentials"
 * Text field "Username" and input field to get username.
 * Text field "Password" and input field to get password.
 * A button "Connect..."
