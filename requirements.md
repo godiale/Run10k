@@ -4,7 +4,7 @@ Application should be written on python.
 Application should be represented as a sequence of web pages.
 User can click "Prev" and "Next" buttons to navigate.
 
-Use "garmin_forerunner.jpg" from project files as a background picture on each page.
+Use "garmin_forerunner.png" from project files as a background picture on each page.
 This picture contains image of watches with round black display. 
 Draw all web controls inside watches' display, using green "monochrome CRT monitor aesthetic" shrift.
 
