@@ -5,9 +5,12 @@ Application should be represented as a sequence of web pages.
 User can click "Prev" and "Next" buttons to navigate.
 
 Each web page should have image "garmin_forerunner.png" from project files as a background picture.
-Lets upper-left corner has coordinates (0, 0) in pixels. 
-Then "drawing area" is defined as a circle with center in pixel (764, 434) and radius 200 pixels.
-All banners, text input controls, buttons that application shows to the user, should fit inside "drawing area".
+Upper-left corner has coordinates (0, 0) in pixels, down-right corner has coordinates (1536, 1024).
+"drawing area" is defined as a rectangle (599, 302) and (930, 567).
+Drawing area size is relative to background picture size, both should be changed proportionally.
+
+All banners, text input controls, buttons (including "Prev" and "Next") should fit inside drawing area.
+There should be no visible boundary displayed for the drawing area.
 Fonts and lines should be styled as green "monochrome CRT monitor aesthetic".
 
 On the first page, application shows banner "Herzlich Willkommen!".
