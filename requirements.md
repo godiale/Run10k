@@ -5,9 +5,10 @@ Application should be represented as a sequence of web pages.
 User can click "Prev" and "Next" buttons to navigate.
 
 Each web page should have image "garmin_forerunner.png" from project files as a background picture.
-This picture contains image of watches with round black display, having circle shape.
-Analyze the picture, find black circle shape area, determine its position and size. Lets name it "drawing area".
-All banners, text input controls, buttons that application shows to the user, should fit inside "drawing area" and styled as green "monochrome CRT monitor aesthetic".
+Lets upper-left corner has coordinates (0, 0) in pixels. 
+Then "drawing area" is defined as a circle with center in pixel (764, 434) and radius 200 pixels.
+All banners, text input controls, buttons that application shows to the user, should fit inside "drawing area".
+Fonts and lines should be styled as green "monochrome CRT monitor aesthetic".
 
 On the first page, application shows banner "Herzlich Willkommen!".
 
