@@ -10,7 +10,7 @@ Upper-left corner has coordinates (0, 0) in pixels, down-right corner has coordi
 Drawing area size is relative to background picture size, both should be changed proportionally.
 
 All banners, text input controls, buttons (including "Prev" and "Next") should fit inside drawing area.
-There should be no visible boundary displayed for the drawing area.
+There should be no visible boundary displayed for the drawing area and no background color.
 Fonts and lines should be styled as green "monochrome CRT monitor aesthetic".
 
 On the first page, application shows banner "Herzlich Willkommen!".
