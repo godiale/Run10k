@@ -14,6 +14,7 @@ There should be no visible boundary displayed for the drawing area and no backgr
 Fonts and lines should be styled as green "monochrome CRT monitor aesthetic".
 
 On the first page, application shows banner "Herzlich Willkommen!".
+Button "Prev" should be disabled on first page.
 
 On the second page, application shows:
 * Text field "Username" and input field to get username.
@@ -30,3 +31,10 @@ Application should hold Garmin Connect API session and use it to get data.
 On the third page application shows following information.
 * How many days starting 07.08.2020 I had at least 1 running training (running days done). Call it "Running days".
 * Calculate average runs rate per day from the history, predict and display the date, when I reach 10000 running days, with this rate. Call it "Estimated completion".
+Button "Next" should be disabled on third page.
+
+Implementation should contain automated tests.
+By default testing functionality should be disabled for local development.
+
+
+
